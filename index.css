@@ -1,0 +1,173 @@
+/* CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Styling */
+
+/*
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+*/
+
+body
+{
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass';
+  color: hsl(0, 0%, 100%);
+  margin: 1.5rem;
+  place-content: center;
+}
+.main-container,.thank-you-container
+{
+  background-color: hsl(213, 19%, 18%);
+  padding: 1.5rem;
+  display: grid;
+  border-radius: 15px;
+max-width: 320px;
+margin: auto;  
+
+}
+.main-container img
+{
+  background-color:hsl(213, 20%, 22%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.main-container ul
+{
+   list-style-type: none;
+   display: flex;
+padding-left: 0px;
+}
+.description
+{
+  color:hsl(217, 12%, 63%);
+
+}
+
+.rate
+{
+  border-radius: 50%;
+  border: none;
+  background-color:hsl(213, 20%, 22%);
+  color:  hsl(217, 12%, 63%);
+  width: 3rem;
+  height: 3rem;
+  padding: 0px;
+  margin: 0px;
+  cursor: pointer;
+
+}
+.rate:hover
+{
+  color: hsl(0, 0%, 100%);
+  background-color: rgba(252,118,19,255);
+}
+.rate:focus
+{
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+
+}
+.submit
+{
+  background-color: rgba(252,118,19,255);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  height: 45px;
+  width: 280px;
+    cursor: pointer;
+
+}
+.submit:hover
+{
+  color: rgba(252,118,19,255);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thank-you-container 
+{
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.rating
+{
+ justify-content: center;
+ color: rgba(252,118,19,255) ;
+  background-color:hsl(213, 20%, 22%);
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 5px;
+border-radius: 50px;
+}
+.hidden
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
